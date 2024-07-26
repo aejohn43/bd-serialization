@@ -123,8 +123,8 @@ Resources:
       Handler: index.handler
       Role:
         Fn::GetAtt: [ LambdaRole , "Arn" ]
-      Runtime: nodejs14.x
-      Timeout: 60
+      Runtime: nodejs18.x
+      Timeout: 100
   Unit5Lesson07DynamoDBOnlineUserOrders:
     Type: AWS::DynamoDB::Table
     Properties:
